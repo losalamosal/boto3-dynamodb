@@ -15,6 +15,7 @@ We use `pipenv` to manage Python virtual environments.
 > cd boto3-dynamodb
 > pipenv --three
 > pipenv install boto3
+> pipenv install httpie
 ```
 
 To work in the environment:
