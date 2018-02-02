@@ -24,3 +24,13 @@ To work in the environment:
 (boto3-dynamodb-0PTZRWPv) > export AWS_PROFILE=whatever
 > python ...       # can also use python3
 ```
+
+Install DynamoDB
+[locally](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html):
+
+```sh
+> java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+> ^C     # to kill
+```
+
+
