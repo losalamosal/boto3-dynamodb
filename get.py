@@ -6,8 +6,8 @@ table = dynamodb.Table('speeds')
 
 response = table.get_item(
     Key={
-        'date': '2018-02-02',
-        'hour': 0
+        'year': '2018',
+        'mo-day': '01-23'
     }
 )
 item = response['Item']

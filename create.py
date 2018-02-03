@@ -9,22 +9,22 @@ table = dynamodb.create_table(
     TableName='speeds',
     KeySchema=[
         {
-            'AttributeName': 'date',
+            'AttributeName': 'year',
             'KeyType': 'HASH'
         },
         {
-            'AttributeName': 'hour',
+            'AttributeName': 'mo-day',
             'KeyType': 'RANGE'
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'date',
+            'AttributeName': 'year',
             'AttributeType': 'S'
         },
         {
-            'AttributeName': 'hour',
-            'AttributeType': 'N'
+            'AttributeName': 'mo-day',
+            'AttributeType': 'S'
         },
 
     ],
