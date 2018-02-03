@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import boto3
 
 # Get the service resource.

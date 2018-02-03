@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import boto3
 
 # For a Boto3 client.
