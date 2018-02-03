@@ -33,4 +33,16 @@ Install DynamoDB
 > ^C     # to kill
 ```
 
+### Determine Key Structure
+
+For small examples (e.g. `cable-scrape`) we will only need one partition. The
+partition key is year (e.g. 2018) and the sort key is a concatenation of month
+and day (e.g. `03-27`). The relevant items will be lists of values for speed,
+sn, etc. (e.g. `up: [6.76, 7.66, 5.98,...]`).
+
+The queries of this table will **not** be *ad hoc*. We'll usually query a year
+based on partition key and then all values for every month (what if there is no
+month yet?).
+
+
 
