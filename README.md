@@ -25,6 +25,21 @@ To work in the environment:
 > python ...       # can also use python3
 ```
 
+or
+
+```sh
+> pipenv shell
+(boto3-dynamodb-0PTZRWPv) > export AWS_PROFILE=whatever
+(boto3-dynamodb-0PTZRWPv) > ./list.py
+(boto3-dynamodb-0PTZRWPv) > ./create.py
+(boto3-dynamodb-0PTZRWPv) > ./list.py
+(boto3-dynamodb-0PTZRWPv) > ./put.py
+(boto3-dynamodb-0PTZRWPv) > ./get.py
+(boto3-dynamodb-0PTZRWPv) > ./delete.py
+(boto3-dynamodb-0PTZRWPv) > ./list.py
+```
+
+
 Install DynamoDB
 [locally](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html):
 
